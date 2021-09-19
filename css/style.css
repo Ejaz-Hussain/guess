@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #fff;
+  --bgColor: #333;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  /* height: 100vh; */
+  background-color: var(--bgColor);
+  color: var(--primaryColor);
+  font-family: "Press Start 2P", cursive;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.btn {
+  padding: 1.3rem 4rem;
+  font-size: 1.7rem;
+  border: none;
+  border-radius: 0.3rem;
+  font-family: "Press Start 2P", cursive;
+}
+
+.btn:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+/* GLOBAL STYLES TILL ABOVE */
+
+.main-header {
+  text-align: center;
+}
+
+.main-header p {
+  font-size: 1.5rem;
+}
+
+.main-header .btn.again {
+  margin: 2rem;
+}
+
+.showcase h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.line {
+  position: relative;
+  margin: 5rem 0;
+}
+
+.line #separation-line {
+  height: 1.5rem;
+  background-color: #fff;
+}
+.line .container {
+  display: flex;
+  justify-content: center;
+}
+.line .container .box {
+  width: 10rem;
+  height: 8rem;
+  font-size: 3rem;
+  padding: 2rem;
+  background-color: var(--primaryColor);
+  color: var(--bgColor);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.state-area {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 9rem;
+}
+
+.up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.left .get-number {
+  padding: 1.3rem;
+  color: var(--bgColor);
+  width: 18rem;
+  height: 8rem;
+  font-size: 4rem;
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.check {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.state-area .bottom.right {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  /* text-align: center; */
+}
+
+.state-area h3 {
+  margin-bottom: 1.2rem;
+  /* text-align: left; */
+}
+
+@media (min-width: 500px) {
+  :root {
+    font-size: 72%;
+  }
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 80%;
+  }
+  body {
+    margin-top: 1rem;
+  }
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-header p {
+    order: 2;
+  }
+  .main-header .again {
+    order: 1;
+  }
+  .showcase h1 {
+    font-size: 2.5rem;
+    margin: 2rem 0 0rem 0;
+  }
+  .line {
+    margin: 7rem 0;
+  }
+  .state-area {
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .state-area h3 {
+    margin-bottom: 1.2rem;
+    text-align: left;
+  }
+
+  h3#message {
+    text-align: left !important;
+    font-size: 1.4rem;
+  }
+
+  .stats {
+    text-align: left;
+  }
+  .state-area .bottom.right {
+    width: 25rem;
+  }
+
+  .left .get-number {
+    width: 14rem;
+    height: 7rem;
+    font-size: 4rem;
+    color: var(--bgColor);
+  }
+  .left .check {
+    /* padding: 1.3rem 2rem; */
+    width: 14rem;
+    text-align: center;
+    height: 4.5rem;
+  }
+  .right h3 {
+    font-size: 1.5rem;
+  }
+  .right h3.scores-span {
+    margin: 2.5rem 0;
+  }
+  .btn {
+    padding: 1.3rem 3rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-height: 650px) {
+  * {
+    margin: 0.5rem 0;
+  }
+}
+
+@media (min-height: 700px) {
+  * {
+    margin: 0.8rem 0;
+  }
+}
+
+@media (min-height: 750px) {
+  * {
+    margin: 0.8rem 0;
+  }
+}
+
+@media (min-height: 800px) {
+  * {
+    margin: 2.5rem 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  :root {
+    font-size: 95%;
+  }
+  .container {
+    width: 80%;
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 700px) {
+  * {
+    margin: 0;
+  }
+}
