@@ -210,6 +210,12 @@ body {
   }
 }
 
+.reset-highscore {
+  font-size: 12px;
+  margin-top: 5rem;
+  width: 18rem;
+}
+
 @media (min-height: 650px) {
   * {
     margin: 0.5rem 0;
