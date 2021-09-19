@@ -16,7 +16,8 @@ let setScore = function (scoree) {
 document
   .querySelector(".reset-highscore")
   .addEventListener("click", function () {
-    document.querySelector("#highscore").textContent = 0;
+    highscore = 0;
+    document.querySelector("#highscore").textContent = highscore;
   });
 
 document.querySelector(".again").addEventListener("click", function () {
